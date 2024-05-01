@@ -25,34 +25,47 @@
   }, 1000);
 
   const rap = [
-    { time: 16, text: '夏の草原に' },
-    { time: 21, text: '銀河は高く歌う' },
-    { time: 27, text: '胸に手を当てて' },
-    { time: 32, text: '風を感じる' },
-    { time: 38, text: '君のぬくもりは' },
-    { time: 43, text: '宇宙が燃えていた' },
-    { time: 49, text: '遠い時代のなごり' },
-    { time: 54, text: '君は宇宙' },
-    { time: 68, text: '百億年の歴史が今も身体に流れてる' },
-    { time: 79, text: '光の声が天高く聞こえる' },
-    { time: 85, text: '君も星だよ' },
-    { time: 90, text: 'みんなみんな' },
+    { time: 16, kanji: '夏の草原に', hiragana: 'なつのくさはらに' },
+    { time: 21, kanji: '銀河は高く歌う', hiragana: 'ぎんがはたかくうたう' },
+    { time: 27, kanji: '胸に手を当てて', hiragana: 'むねにてをあてて' },
+    { time: 32, kanji: '風を感じる', hiragana: 'かぜをかんじる' },
+    { time: 38, kanji: '君のぬくもりは', hiragana: 'きみのぬくもりは' },
+    { time: 43, kanji: '宇宙が燃えていた', hiragana: 'うちゅうがもえていた' },
+    { time: 49, kanji: '遠い時代のなごり', hiragana: 'とおいじだいのなごり' },
+    { time: 54, kanji: '君は宇宙', hiragana: 'きみはうちゅう' },
+    { time: 68, kanji: '百億年の歴史が今も身体に流れてる', hiragana: 'ひゃくおくねんのれきしがいまもからだにながれてる' },
+    { time: 79, kanji: '光の声が天高く聞こえる', hiragana: 'ひかりのこえがそらたかくきこえる' },
+    { time: 85, kanji: '君も星だよ', hiragana: 'きみもほしだよ' },
+    { time: 90, kanji: 'みんなみんな', hiragana: 'みんなみんな' },
   ]
 
   let index = 0;
-  const show = document.querySelector('#show');
-  const showText = document.createElement('p');
-  showText.textContent = rap[index].text;
-  show.appendChild(showText);
+  const currentKanji = document.querySelector('#current-kanji');
+  currentKanji.textContent = rap[index].kanji;
+  const currentHira = document.querySelector('#current-hira');
+  currentHira.textContent = rap[index].hiragana;
+  const nextKanji = document.querySelector('#next-kanji');
+  nextKanji.textContent = rap[index + 1].kanji;
+  const nextHira = document.querySelector('#next-hira');
+  nextHira.textContent = rap[index + 1].hiragana;
+
   const inputText = document.querySelector('#inputText');
   const sentence = document.querySelector('#sentence');
+  let volume = 100;
   const setIntervalId = setInterval(() => {
+    const currentPlayTime = player.getCurrentTime();
+
     if (index === rap.length) {
-      clearInterval(setIntervalId);
+      if (currentPlayTime <= rap[rap.length - 1].time + 5) {
+        player.setVolume(volume);
+        volume -= 20;
+        return;
+      }
+
       player.stopVideo();
+      clearInterval(setIntervalId);
       return;
     }
-    const currentPlayTime = player.getCurrentTime();
 
     if (Math.ceil(currentPlayTime) === rap[index].time) {
       const inputTextValue = inputText.value;
@@ -63,10 +76,21 @@
       index++;
       if (index === rap.length) {
         inputText.value = '';
+        currentKanji.textContent = '終わり';
+        currentHira.textContent = '';
         return;
       }
-      showText.textContent = rap[index].text;
+      currentKanji.textContent = rap[index].kanji;
+      currentHira.textContent = rap[index].hiragana;
+      if (index === rap.length - 1) {
+        nextKanji.textContent = '終わり';
+        nextHira.textContent = '';
+        return;
+      }
+      nextKanji.textContent = rap[index + 1].kanji;
+      nextHira.textContent = rap[index + 1].hiragana;
     }
 
   }, 1000);
+
 })();

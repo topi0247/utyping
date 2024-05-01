@@ -3,9 +3,27 @@
 <div id="player"></div>
 
 
-<div id="show" class="text-center my-3 text-lg"></div>
-<input type="text" class="bg-slate-200 w-full p-2 rounded" id="inputText" placeholder="ここに歌詞を入力してね！" />
+<div id="show" class="text-center my-3 text-lg">
+  <h3 class="text-lg">歌詞</h3>
+  <div class="grid grid-cols-2 w-full">
+    <div id="lyrics" class="text-slate border-r border-slate-200">
+      <p class="bg-green-300">Now</p>
+      <p id="current-kanji"></p>
+      <p id="current-hira"></p>
+    </div>
+
+    <div id="next-lyrics" class="text-slate">
+      <p class="bg-yellow-200">Next</p>
+      <p id="next-kanji"></p>
+      <p id="next-hira"></p>
+    </div>
+  </div>
+</div>
+
+<div class="block w-full">
+  <input type="text" class="bg-slate-200 w-full p-2 rounded" id="inputText" placeholder="ここに歌詞を入力してね！" />
+</div>
 
 <div id="sentence" class="bg-slate-400 p-2 rounded mt-2 text-white">
-  <h3 class="text-lg text-slate-100">入力した文字</h3>
+  <h3 class="text-lg text-slate-100 text-center">入力した文字</h3>
 </div>
