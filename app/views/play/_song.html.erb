@@ -1,0 +1,19 @@
+<section class="bg-slate-300 p-2 rounded">
+  <h3 class="text-xl text-center">
+    <%= song[:title] %>
+  </h3>
+  <h4 class="text-sm text-end">ジャンル：<%= song[:genre] %></h4>
+  <div class="mb-2">
+
+
+    <% if song[:ranking].length == 0 %>
+  <p>まだランキングがありません</p>
+<% else %>
+  <ol>
+    <%= render partial: 'play/ranking', collection: song[:ranking] %>
+  </ol>
+<% end %>
+
+  </div>
+  <%= link_to 'この歌で遊ぶ', play_path(song[:id]), class: "inline-block w-full bg-green-200 rounded px-2 py-1 text-center" %>
+</section>

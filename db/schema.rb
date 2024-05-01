@@ -25,23 +25,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_01_062127) do
   end
 
   create_table "records", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "match_kanji_count"
-    t.integer "match_hiragana_count"
-    t.bigint "user_id", null: false
+    t.integer "match_kanji_count", default: 0
+    t.integer "match_hiragana_count", default: 0
+    t.string "user_name"
     t.bigint "lyric_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["lyric_id"], name: "index_records_on_lyric_id"
-    t.index ["user_id"], name: "index_records_on_user_id"
-  end
-
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_users_on_name", unique: true
   end
 
   add_foreign_key "records", "lyrics"
-  add_foreign_key "records", "users"
 end

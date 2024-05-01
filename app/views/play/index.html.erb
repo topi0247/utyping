@@ -1,11 +1,7 @@
 <h1 class="text-3xl my-8 text-center">うたいぴんぐ♫</h1>
-
 <section>
   <p class="text-center text-xl my-8">歌に合わせてタイピングしよう！</p>
 </section>
-
-<article>
-  <% @lyrics.each do |lyric| %>
-    <%= render 'record' , {record:@records, lyric: lyric} %>
-      <% end %>
+<article class="w-[1000px] grid grid-cols-4 gap-3 m-auto">
+  <%= render partial: 'play/song', collection: @songs %>
 </article>
