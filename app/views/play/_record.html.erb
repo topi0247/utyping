@@ -1,0 +1,29 @@
+<section class="bg-slate-300 p-2 rounded w-1/2">
+    <h3 class="text-xl text-center">
+      <%= lyric.title %>
+    </h3>
+    <h4 class="text-sm text-end">ジャンル：<%= lyric.genre %>
+    </h4>
+    <div class="mb-2">
+      <% if record.length == 0 %>
+        <p>まだランキングがありません</p>
+      <% else %>
+          <ol>
+            <li>
+              <%= record.ranking[0].name %>　score：<%= record.ranking[0].score_kanji %>%
+            </li>
+            <% if record.ranking[1] %>
+              <li>
+                <%= record.ranking[1].name %>　score：<%= record.ranking[0].score_kanji %>%
+              </li>
+            <% end %>
+            <% if record.ranking[2] %>
+              <li>
+                <%= record.ranking[2].name %>　score：<%= record.ranking[0].score_kanji %>%
+              </li>
+            <% end %>
+          </ol>
+      <% end %>
+    </div>
+    <%= link_to 'この歌で遊ぶ', play_path(lyric.id), class: "inline-block w-full bg-green-200 rounded px-2 py-1 text-center" %>
+  </section>
