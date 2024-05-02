@@ -1,19 +1,30 @@
-# Lyric.find_or_create_by!(title: 'COSMOS',uid: 'XW5rkR0JsGo', genre: '合唱', kanji_char_count: 89, hiragana_char_count: 121, data:[
-#     { time: 16, kanji: '夏の草原に', hiragana: 'なつのくさはらに' },
-#     { time: 21, kanji: '銀河は高く歌う', hiragana: 'ぎんがはたかくうたう' },
-#     { time: 27, kanji: '胸に手を当てて', hiragana: 'むねにてをあてて' },
-#     { time: 32, kanji: '風を感じる', hiragana: 'かぜをかんじる' },
-#     { time: 38, kanji: '君のぬくもりは', hiragana: 'きみのぬくもりは' },
-#     { time: 43, kanji: '宇宙が燃えていた', hiragana: 'うちゅうがもえていた' },
-#     { time: 49, kanji: '遠い時代のなごり', hiragana: 'とおいじだいのなごり' },
-#     { time: 54, kanji: '君は宇宙', hiragana: 'きみはうちゅう' },
-#     { time: 68, kanji: '百億年の歴史が今も身体に流れてる', hiragana: 'ひゃくおくねんのれきしがいまもからだにながれてる' },
-#     { time: 79, kanji: '光の声が天高く聞こえる', hiragana: 'ひかりのこえがそらたかくきこえる' },
-#     { time: 85, kanji: '君も星だよ', hiragana: 'きみもほしだよ' },
-#     { time: 90, kanji: 'みんなみんな', hiragana: 'みんなみんな' },
-# ])
+Lyric.find_or_create_by!(uid: 'XW5rkR0JsGo') do |lyric|
+  lyric.title = 'COMSOM'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 89
+  lyric.hiragana_char_count = 121
+  lyric.data = [
+    { time: 16, kanji: '夏の草原に', hiragana: 'なつのくさはらに' },
+    { time: 21, kanji: '銀河は高く歌う', hiragana: 'ぎんがはたかくうたう' },
+    { time: 27, kanji: '胸に手を当てて', hiragana: 'むねにてをあてて' },
+    { time: 32, kanji: '風を感じる', hiragana: 'かぜをかんじる' },
+    { time: 38, kanji: '君のぬくもりは', hiragana: 'きみのぬくもりは' },
+    { time: 43, kanji: '宇宙が燃えていた', hiragana: 'うちゅうがもえていた' },
+    { time: 49, kanji: '遠い時代のなごり', hiragana: 'とおいじだいのなごり' },
+    { time: 54, kanji: '君は宇宙', hiragana: 'きみはうちゅう' },
+    { time: 68, kanji: '百億年の歴史が今も身体に流れてる', hiragana: 'ひゃくおくねんのれきしがいまもからだにながれてる' },
+    { time: 79, kanji: '光の声が天高く聞こえる', hiragana: 'ひかりのこえがそらたかくきこえる' },
+    { time: 85, kanji: '君も星だよ', hiragana: 'きみもほしだよ' },
+    { time: 90, kanji: 'みんなみんな', hiragana: 'みんなみんな' },
+  ]
+end
 
-Lyric.find_or_create_by!(title: '旅立ちの日に',uid: 'Xgy7JzY1Gcg', genre: '合唱', kanji_char_count: 87, hiragana_char_count: 112, data:[
+Lyric.find_or_create_by!(uid: 'Xgy7JzY1Gcg') do |lyric|
+  lyric.title = '旅立ちの日に'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 87
+  lyric.hiragana_char_count = 112
+  lyric.data = [
     { time: 35, kanji: '白い光の中に', hiragana: 'しろいひかりのなかに' },
     { time: 41, kanji: '山並みは萌えて', hiragana: 'やまなみはもえて' },
     { time: 47, kanji: 'はるかな空の果てまでも', hiragana: 'はるかなそらのはてまでも' },
@@ -25,9 +36,15 @@ Lyric.find_or_create_by!(title: '旅立ちの日に',uid: 'Xgy7JzY1Gcg', genre: 
     { time: 86, kanji: '希望の風に乗り', hiragana: 'きぼうのかぜにのり' },
     { time: 91, kanji: 'この広い大空に', hiragana: 'このひろいおおぞらに' },
     { time: 97, kanji: '夢を託して', hiragana: 'ゆめをたくして' },
-])
+  ]
+end
 
-Lyric.find_or_create_by!(title: '夢の世界を', uid: 'DqBGL4SR9EA', genre: '合唱', kanji_char_count: 91, hiragana_char_count: 101, data:[
+Lyric.find_or_create_by!(uid: 'DqBGL4SR9EA') do |lyric|
+  lyric.title = '夢の世界を'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 91
+  lyric.hiragana_char_count = 101
+  lyric.data = [
     { time: 10, kanji: 'ほほえみ交わして語り合い', hiragana: 'ほほえみかわしてかたりあい' },
     { time: 15, kanji: '落ち葉を踏んで歩いたね', hiragana: 'おちばをふんであるいたね' },
     { time: 22, kanji: '並木のいちょうを鮮やかに', hiragana: 'なみきのいちょうをあざやかに' },
@@ -36,11 +53,17 @@ Lyric.find_or_create_by!(title: '夢の世界を', uid: 'DqBGL4SR9EA', genre: '�
     { time: 40, kanji: '思い出のあふれる道を駆け抜け', hiragana: 'おもいでのあふれるみちをかけぬけ' },
     { time: 45, kanji: 'さあ語り合おう', hiragana: 'さあかたりあおう' },
     { time: 55, kanji: 'すばらしいぼくらの夢の世界を', hiragana: 'すばらしいぼくらのゆめのせかいを' },
-])
+  ]
+end
 
-Lyric.find_or_create_by!(title: '時の旅人', uid: 'mLfew0H8IMw', genre: '合唱', kanji_char_count: 314, hiragana_char_count: 368, data:[
+Lyric.find_or_create_by!(uid: 'mLfew0H8IMw') do |lyric|
+  lyric.title = '時の旅人'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 314
+  lyric.hiragana_char_count = 369
+  lyric.data = [
     { time: 12, kanji: 'めぐるめぐる風', hiragana: 'めぐるめぐるかぜ' },
-    { time: 18, kanji: 'めぐる想いのって', hiragana: 'めぐるおもにのって' },
+    { time: 18, kanji: 'めぐる想いのって', hiragana: 'めぐるおもいにのって' },
     { time: 24, kanji: 'なつかしいあの日に', hiragana: 'なつかしいあのひに' },
     { time: 31, kanji: '会いにゆこう', hiragana: 'あいにゆこう' },
     { time: 36, kanji: 'めぐるめぐる風', hiragana: 'めぐるめぐるかぜ' },
@@ -68,81 +91,199 @@ Lyric.find_or_create_by!(title: '時の旅人', uid: 'mLfew0H8IMw', genre: '合�
     { time: 179, kanji: 'なつかしい明日に会いにゆこう', hiragana: 'なつかしいあしたにあいにゆこう' },
     { time: 185, kanji: 'めぐる風めぐる想いにのって', hiragana: 'めぐるかぜめぐるおもいにのって' },
     { time: 194, kanji: 'すばらしい明日をうたおう', hiragana: 'すばらしいあしたをうたおう' },
-])
+  ]
+end
 
-# Lyric.find_or_create_by!(title: 'Tomorrow', uid: 'E8pyKihKRgI', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'E8pyKihKRgI') do |lyric|
+  lyric.title = 'Tomorrow'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 158
+  lyric.hiragana_char_count= 166
+  lyric.data = [
+    { time: 18, kanji: '時のながれいつでも', hiragana: 'ときのながれいつでも' },
+    { time: 22, kanji: '駆けぬけて行くから', hiragana: 'かけぬけてゆくから' },
+    { time: 28, kanji: 'やさしさだけ忘れずに', hiragana: 'やさしさだけわすれずに' },
+    { time: 34, kanji: '抱きしめていよう', hiragana: 'だきしめていよう' },
+    { time: 40, kanji: '大空を自由に鳥たちが', hiragana: 'おおぞらをじゆうにとりたちが' },
+    { time: 46, kanji: '光の中飛びかうように', hiragana: 'ひかりのなかとびかうように' },
+    { time: 50, kanji: '夜空からこぼれた星屑が', hiragana: 'よぞらからこぼれたほしくずが' },
+    { time: 57, kanji: '波の上をすべるだろう', hiragana: 'なみのうえをすべるだろう' },
+    { time: 62, kanji: 'TommorrowTomorrow', hiragana: 'とぅもろーとぅもろー' },
+    { time: 68, kanji: 'また明日が', hiragana: 'またあしたが' },
+    { time: 74, kanji: 'すばらしい夢とすてきなメロディー', hiragana: 'すばらしいゆめとすてきなめろでぃー' },
+    { time: 79, kanji: '運んできてくれるだろう', hiragana: 'はこんできてくれるだろう' },
+    { time: 85, kanji: 'TomorrowTomorrow', hiragana: 'とぅもろーとぅもろー' },
+    { time: 90, kanji: '明日を信じて', hiragana: 'あしたをしんじて' },
+    { time: 100, kanji: '翼ひろげ飛んでみよう', hiragana: 'つばさひろげとんでみよう' },
+]
+end
 
-# Lyric.find_or_create_by!(title: '大地讃頌', uid: 'P5HCpwXXigo', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'P5HCpwXXigo') do |lyric|
+  lyric.title = '大地讃頌'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 132
+  lyric.hiragana_char_count = 176
+  lyric.data = [
+    { time: 19, kanji: '母なる大地のふところに', hiragana: 'ははなるだいちのふところに' },
+    { time: 32, kanji: '我ら人の子の喜びはある', hiragana: 'われらひとのこのよろこびはある' },
+    { time: 38, kanji: '大地を愛せよ', hiragana: 'だいちをあいせよ' },
+    { time: 45, kanji: '大地に生きる', hiragana: 'だいちにいきる' },
+    { time: 53, kanji: '人の子ら', hiragana: 'ひとのこら' },
+    { time: 62, kanji: 'その立つ土に感謝せよ', hiragana: 'ひとのこそのたつつちにかんしゃせよ' },
+    { time: 92, kanji: '平和な大地を', hiragana: 'へいわなだいちを' },
+    { time: 105, kanji: '静かな大地を', hiragana: 'しずかなだいちを' },
+    { time: 111, kanji: '大地を誉めよ', hiragana: 'だいちをほめよ' },
+    { time: 118, kanji: '讃えよ土を', hiragana: 'たたえよつちを' },
+    { time: 131, kanji: '恩寵の豊かな豊かな大地', hiragana: 'おんちょうのゆたかなゆたかなだいち' },
+    { time: 137, kanji: '大地を褒めよ', hiragana: 'だいちをほめよ' },
+    { time: 144, kanji: '讃えよ土を', hiragana: 'たたえよつちを' },
+    { time: 158, kanji: '母なる大地を母なる大地を', hiragana: 'ははなるだいちをははなるだいちを' },
+    { time: 172, kanji: '讃えよ褒めよ讃えよ土を', hiragana: 'たたえよほめよたたえよつちを' },
+    { time: 179, kanji: '母なる大地をああ', hiragana: 'ははなるだいちをああ' },
+    { time: 184, kanji: '讃えよ大地を', hiragana: 'たたえよだいちを' },
+    { time: 190, kanji: 'ああ', hiragana: 'ああ' },
+  ]
+end
 
-# Lyric.find_or_create_by!(title: 'HEIWAの鐘', uid: 'NWqwq2Jbrzs', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'NWqwq2Jbrzs') do |lyric|
+  lyric.title = 'HEIWAの鐘'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 161
+  lyric.hiragana_char_count = 194
+  lyric.data = [
+    { time: 30, kanji: 'よみがえれあの時代へ', hiragana: 'よみがえれあのときへ' },
+    { time: 34, kanji: '武器を持たぬことを伝えた', hiragana: 'ぶきをもたぬことをつたえた' },
+    { time: 37, kanji: '先人たちの声を', hiragana: 'せんじんたちのこえを' },
+    { time: 41, kanji: '永遠に語り継ぐのさ', hiragana: 'とわにかたりつぐのさ' },
+    { time: 45, kanji: '脅かすことでしか', hiragana: 'おびやかすことでしか' },
+    { time: 48, kanji: '守ることができないと', hiragana: 'まもることができないと' },
+    { time: 53, kanji: '繰り返す戦争忘れゆく', hiragana: 'くりかえすつみわすれゆく' },
+    { time: 56, kanji: '愚かな権力よ', hiragana: 'おろかなちからよ' },
+    { time: 60, kanji: 'いつか自由な空が', hiragana: 'いつかじゆうなそらが' },
+    { time: 64, kanji: '虹かかる翼ひろげゆく', hiragana: 'にじかかるつばさひろげゆく' },
+    { time: 68, kanji: '風に高く大きな', hiragana: 'かぜにたかくおおきな' },
+    { time: 71, kanji: '幸せ贈るだろう', hiragana: 'しあわせおくるだろう' },
+    { time: 75, kanji: 'ぼくらの生まれたこの地球に', hiragana: 'ぼくらのうまれたこのほしに' },
+    { time: 79, kanji: '奇跡を起こしてみないか', hiragana: 'きせきをおこしてみないか' },
+    { time: 82, kanji: '拳をひろげてつなぎゆく', hiragana: 'こぶしをひろげてつなぎゆく' },
+    { time: 85, kanji: '心はひとつになれるさ', hiragana: 'こころはひとつになれるさ' },
+    { time: 93, kanji: '平和の鐘は君の胸に響くよ', hiragana: 'へいわのかねはきみのむねにひびくよ' },
+  ]
+end
 
-# Lyric.find_or_create_by!(title: '明日へ', uid: 'amm5qtOLElM', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'amm5qtOLElM') do |lyric|
+  lyric.title = '明日へ'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 118
+  lyric.hiragana_char_count = 140
+  lyric.data = [
+    { time: 17, kanji: '青い風に吹かれて', hiragana: 'あおいかぜにふかれて' },
+    { time: 24, kanji: '明日思うぼくらがいる', hiragana: 'あしたおもうぼくらがいる' },
+    { time: 30, kanji: '遥かな風を受けて', hiragana: 'はるかなかぜをうけて' },
+    { time: 36, kanji: '心ふるえ熱く燃える', hiragana: 'こころふるえあつくもえる' },
+    { time: 44, kanji: 'どこまで行けるかわからないけど', hiragana: 'どこまでいけるかわからないけど' },
+    { time: 49, kanji: 'ぼくらは走り出す明日へ', hiragana: 'ぼくらははしりだすあしたへ' },
+    { time: 57, kanji: 'そうさ果てなく続く道を行くぼくら', hiragana: 'そうさはてなくつづくみちをゆくぼくら' },
+    { time: 62, kanji: '向かい風の時も', hiragana: 'むかいかぜのときも' },
+    { time: 65, kanji: '嵐の夜も夜も', hiragana: 'あらしのよるもよるも' },
+    { time: 71, kanji: 'ぼくらのことを何かが呼ぶから', hiragana: 'ぼくらのことをなにかがよぶから' },
+    { time: 75, kanji: 'まだ見ぬ明日へと', hiragana: 'まだみぬあしたへと' },
+    { time: 80, kanji: '走って行くよ', hiragana: 'はしってゆくよ' },
+  ]
+end
 
-# Lyric.find_or_create_by!(title: '', uid: '', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'CusPYFY6p5s') do |lyric|
+  lyric.title = '大切なもの'
+  lyric.genre ='合唱'
+  lyric.kanji_char_count = 103
+  lyric.hiragana_char_count = 221
+  lyric.data = [
+    { time: 19, kanji: '空にひかる星を', hiragana: 'そらにひかるほしを' },
+    { time: 25, kanji: '君とかぞえた夜', hiragana: 'きみとかぞえたよる' },
+    { time: 31, kanji: 'あの日も今日のような', hiragana: 'あのひもきょうのような' },
+    { time: 37, kanji: '風が吹いていた', hiragana: 'かぜがふいていた' },
+    { time: 43, kanji: 'あれからいくつもの', hiragana: 'あれからいくつもの' },
+    { time: 48, kanji: '季節こえて時を過ごし', hiragana: 'きせつこえてときをすごし' },
+    { time: 53, kanji: 'それでもあの想いを', hiragana: 'それでもあのおもいを' },
+    { time: 59, kanji: 'ずっと忘れることはない', hiragana: 'ずっとわすれることはない' },
+    { time: 65, kanji: '大切なものに', hiragana: 'たいせつなものに' },
+    { time: 71, kanji: '気づかないぼくがいた', hiragana: 'きづかないぼくがいた' },
+    { time: 77, kanji: '今胸の中にある', hiragana: 'いまむねのなかにある' },
+    { time: 83, kanji: 'あたたかいこの気持ち', hiragana: 'あたたかいこのきもち' },
+  ]
+end
 
-# Lyric.find_or_create_by!(title: '大切なもの', uid: 'CusPYFY6p5s', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'TY1fVPDXDZ0') do |lyric|
+  lyric.title = '心の瞳'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 151
+  lyric.hiragana_char_count = 178
+  lyric.data = [
+    { time: 29, kanji: '心の瞳で君を見つめれば', hiragana: 'こころのひとみできみをみつめれば' },
+    { time: 34, kanji: '愛することそれが', hiragana: 'あいすることそれが' },
+    { time: 37, kanji: 'どんなことだか', hiragana: 'どんなことだか' },
+    { time: 44, kanji: 'わかりかけてきた', hiragana: 'わかりかけてきた' },
+    { time: 50, kanji: '言葉で言えない', hiragana: 'ことばでいえない' },
+    { time: 54, kanji: '胸の暖かさ', hiragana: 'むねのあたたかさ' },
+    { time: 62, kanji: '遠まわりをしてた人生だけど', hiragana: 'とおまわりをしてたじんせいだけど' },
+    { time: 67, kanji: '君だけがいまでは', hiragana: 'きみだけがいまでは' },
+    { time: 73, kanji: '愛のすべて時の歩み', hiragana: 'あいのすべてときのあゆみ' },
+    { time: 80, kanji: 'いつもそばでわかち合える', hiragana: 'いつもそばでわかちあえる' },
+    { time: 91, kanji: 'たとえ明日が少しずつ見えてきても', hiragana: 'たとえあしたがすこしずつみえてきても' },
+    { time: 97, kanji: 'それは生きてきた', hiragana: 'それはいきてきた' },
+    { time: 104, kanji: '足あとがあるからさ', hiragana: 'あしあとがあるからさ' },
+    { time: 116, kanji: 'いつか若さを失くしても心だけは', hiragana: 'いつかわかさをなくしてもこころだけは' },
+    { time: 162, kanji: '決してかわらない', hiragana: 'けっしてかわらない' },
+    { time: 129, kanji: '絆で結ばれてる', hiragana: 'きずなでむすばれてる' },
+]
+end\
 
-# Lyric.find_or_create_by!(title: '心の瞳', uid: 'TY1fVPDXDZ0', genre: '合唱', kanji_char_count: , hiragana_char_count: , data:[
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-#     { time: , kanji: '', hiragana: '' },
-# ])
+Lyric.find_or_create_by!(uid: 'd9vJNwUzOg8') do |lyric|
+  lyric.title = 'OMNIBUS STAR 光年の旅'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 168
+  lyric.hiragana_char_count = 216
+  lyric.data = [
+    { time: 18, kanji: '誰も空は飛べないけれど', hiragana: 'だれもそらはとべないけれど' },
+    { time: 24, kanji: '誰も風になれないけれど', hiragana: 'だれもかぜになれないけれど' },
+    { time: 30, kanji: 'いつも夢を翼にのせて', hiragana: 'いつもゆめをつばさにのせて' },
+    { time: 36, kanji: '旅立つ明日を夢見ている', hiragana: 'たびだつあすをゆめみている' },
+    { time: 42, kanji: '誰も雲に乗れないけれど', hiragana: 'だれもくもにのれないけれど' },
+    { time: 47, kanji: '誰も明日は知らないけれど', hiragana: 'だれもあすはしらないけれど' },
+    { time: 53, kanji: 'いつも風に憧れのせて', hiragana: 'いつもかぜにあこがれのせて' },
+    { time: 59, kanji: '旅立つ明日を夢見ている', hiragana: 'たびだつあすをゆめみている' },
+    { time: 65, kanji: 'この星に生まれて人はみな', hiragana: 'このほしにうまれてひとはみな' },
+    { time: 70, kanji: '光年の銀河の旅をゆく', hiragana: 'こうねんのぎんがのたびをゆく' },
+    { time: 75, kanji: '発駅不明の旅路は遥か', hiragana: 'はつえきふめいのたびじははるか' },
+    { time: 81, kanji: '心の歌を響かせながら', hiragana: 'こころのうたをひびかせながら' },
+    { time: 87, kanji: '青く光るこの星にのり', hiragana: 'あおくひかるこのほしにのり' },
+    { time: 92, kanji: '小さな愛を寄せ合うように', hiragana: 'ちいさなあいをよせあうように' },
+    { time: 98, kanji: '君の君の瞳の中に', hiragana: 'きみのきみのひとみのなかに' },
+    { time: 104, kanji: '幾千億の星も輝くよ', hiragana: 'いくせんおくのほしもかがやくよ' },
+]
+end
+
+Lyric.find_or_create_by!(uid: 'QdQpE3FFG7E') do |lyric|
+  lyric.title = '花は咲く'
+  lyric.genre = '合唱'
+  lyric.kanji_char_count = 136
+  lyric.hiragana_char_count = 167
+  lyric.data = [
+    { time: 18, kanji: '真っ白な雪道に', hiragana: 'まっしろなゆきみちに' },
+    { time: 25, kanji: '春風香る', hiragana: 'はるかぜかおる' },
+    { time: 30, kanji: 'わたしはなつかしい', hiragana: 'わたしはなつかしい' },
+    { time: 37, kanji: 'あの街を思い出す', hiragana: 'あのまちをおもいだす' },
+    { time: 43, kanji: '叶えたい夢もあった', hiragana: 'かなえたいゆめもあった' },
+    { time: 49, kanji: '変わりたい自分もいた', hiragana: 'かわりたいじぶんもいた' },
+    { time: 55, kanji: '今はただなつかしい', hiragana: 'いまはただなつかしい' },
+    { time: 62, kanji: 'あの人を思い出す', hiragana: 'あのひとをおもいだす' },
+    { time: 68, kanji: '誰かの歌が聞こえる', hiragana: 'だれかのうたがきこえる' },
+    { time: 74, kanji: '誰かを励ましてる', hiragana: 'だれかをはげましてる' },
+    { time: 80, kanji: '誰かの笑顔が見える', hiragana: 'だれかのえがおがみえる' },
+    { time: 88, kanji: '悲しみの向こう側に', hiragana: 'かなしみのむこうがわに' },
+    { time: 94, kanji: '花は花は花は咲く', hiragana: 'はなははなははなはさく' },
+    { time: 100, kanji: 'いつか生まれる君に', hiragana: 'いつかうまれるきみに' },
+    { time: 107, kanji: '花は花は花は咲く', hiragana: 'はなははなははなはさく' },
+    { time: 115, kanji: 'わたしは何を残しただろう', hiragana: 'わたしはなにをのこしただろう' },
+]
+end
